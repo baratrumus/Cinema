@@ -1,6 +1,7 @@
 package cinema.servlets;
 
 import cinema.models.Order;
+import cinema.service.CinemaService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +21,7 @@ import java.io.PrintWriter;
 
 public class OrderServlet extends HttpServlet {
 
-    private final CinemaController storage = CinemaController.getInstance();
+    private final CinemaService storage = CinemaService.getInstance();
     private static final Logger LOG = LoggerFactory.getLogger(OrderServlet.class);
 
     /**

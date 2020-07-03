@@ -2,6 +2,7 @@ package cinema.servlets;
 
 import cinema.models.Order;
 import cinema.models.Seat;
+import cinema.service.CinemaService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 
 public class HallServlet extends HttpServlet {
 
-    private final CinemaController storage = CinemaController.getInstance();
+    private final CinemaService storage = CinemaService.getInstance();
 
     /**
      * Загружает по ajax запросу схему зрительного зала

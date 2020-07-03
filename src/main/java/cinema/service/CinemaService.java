@@ -1,4 +1,4 @@
-package cinema.servlets;
+package cinema.service;
 
 import cinema.data.CinemaDB;
 import cinema.data.Db;
@@ -11,15 +11,15 @@ import java.util.List;
  * @since 0.1
  */
 
-public class CinemaController implements Controller {
+public class CinemaService implements Service {
 
-    private static final CinemaController INSTANCE = new CinemaController();
+    private static final CinemaService INSTANCE = new CinemaService();
     private static final Db STORAGE = CinemaDB.getInstance();
 
-    private CinemaController() {
+    private CinemaService() {
     }
 
-    public static CinemaController getInstance() {
+    public static CinemaService getInstance() {
         return INSTANCE;
     }
 
