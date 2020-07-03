@@ -2,7 +2,6 @@ package cinema.servlets;
 
 import cinema.models.Order;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javax.servlet.ServletException;
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -90,7 +88,6 @@ public class OrderServlet extends HttpServlet {
                 LOG.info(message);
             }
             resp.sendRedirect(String.format("%s/", req.getContextPath()));
-            //req.getRequestDispatcher("/WEB-INF/views/hall.jsp").forward(req, resp);
         }
     }
 

@@ -6,9 +6,7 @@ It's simple notepad with ability to check work as done.
 Application have plain interface and one page index.html. 
 User can add new task,  change state of any task as done.
 And use filter checkbox to show only done tasks.
-All requests use AJAX. 
- 
-
+  
 
 #### Technologies
 * Servlets
@@ -22,7 +20,7 @@ All requests use AJAX.
 ![Main screen](https://github.com/baratrumus/toDoList/raw/master/ReadMePic/todo.JPG)
 
 TO DO:
-remove busy list and just block busy places
+remove busy list from main screen and just block busy places
 
 
 
